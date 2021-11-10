@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Griglia dinamica</title>
+    </head>
+    <body>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #333;
+        }
+
+        .container{
+            width: 800px;
+            min-width: 800px;
+            margin: 5rem auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .grid_cell{
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+        }
+
+        </style>
+        <div class="container">
+
+        </div>
+
+
+        <script>
+         /* Creare in js una griglia 8x8
+        ogni volta che clicco un quadrato questo si colora di verde */
+        
+        //DOM 
+        const contEl = document.querySelector('.container')
+
+        //Loop - genero una griglia da 64 elementi con ciclo
+        for (let i = 0; i < 64; i++) {
+            
+            //creo il div
+            const divElement = document.createElement('div')
+            
+            //assegno classe
+            divElement.className = 'grid_cell'
+           
+            //inserisco cella dentro container
+            contEl.append(divElement)
+            
+            //Event Listener a ciascun elemento creato nel ciclo
+            divElement.addEventListener('click', function(){
+               //assegno colore verde all'interno di questa funzione con 'this' 
+                this.style.backgroundColor='green';
+
+            })
+        }
+
+       
+        
+        
+        
+
+
+
+        </script>
+    </body>
+</html>

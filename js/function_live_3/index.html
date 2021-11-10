@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Funzione 2</title>
+    </head>
+    <body>
+
+        <script>
+      /* let x = 40;
+
+      if (x % 2 == 0){
+          console.log("pari");
+      }else{
+          console.log("dispari");
+      }
+
+
+      let y = 41;
+
+      if (x % 1 == 0){
+          console.log("pari");
+      }else{
+          console.log("dispari");
+      }
+ */
+
+
+      function pariDispari(number) {
+        if (number % 2 == 0){
+         return("pari");
+      }else{
+          return("dispari");
+      }  
+      }
+
+      let userNumber = parseInt(prompt('inserisci un numero'))
+
+      if (pariDispari(userNumber) == 'pari') {
+          console.log(userNumber,' è pari');
+      } else {
+          console.log(userNumber,' è dispari');
+      }
+
+
+
+        </script>
+    </body>
+</html>

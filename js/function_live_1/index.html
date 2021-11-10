@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Funzione 1</title>
+    </head>
+    <body>
+
+        <script>
+        function getRandomInteger(min,max) {
+            return Math.floor(Math.random() * (max - min +1)) + min;
+        }
+
+        for (let index = 0; index < 10; index++) {
+            console.log(getRandomInteger(1, 100)); 
+        }
+
+        function isEven(number) {
+            if (number % 2 == 0){
+                return true
+            }
+                return false
+        }
+
+        if (isEven(11)) {
+            console.log('Numero Pari');
+        }else{
+            console.log('Numero Dispari');  
+        }
+
+
+    </script>
+    </body>
+</html>

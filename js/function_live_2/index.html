@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Funzione 2</title>
+    </head>
+    <body>
+
+        <script>
+        //Creare una funzione che dica "ciao classe 42"
+
+
+    /*     alert('Ciao classe 42');
+        alert('Ciao classe 43');
+        alert('Ciao classe 44');
+        alert('Ciao classe 45'); */
+//funzione
+            function hiClass(message) {
+                alert(message)
+            }
+//invoco funzione
+            hiClass('Ciao classe 42');
+
+            for (let index = 42; index <= 50; index++) {
+                let message = `ciao classe ${index}`;
+                hiClass(message)
+            }
+
+        </script>
+    </body>
+</html>

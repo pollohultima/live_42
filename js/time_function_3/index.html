@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live_3</title>
+    </head>
+    <body>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+
+
+        <script>
+
+            const start = document.getElementById('start')
+            const stop = document.getElementById('stop')
+            let clock
+
+            start.addEventListener('click', function(){
+
+            let seconds = 0;
+                clock = setInterval(function() {
+                    seconds++
+                    console.log(seconds);
+
+                }, 1000);
+            })
+
+             stop.addEventListener('click', function(){
+                clearInterval(clock)
+                
+             })
+
+
+     
+
+
+    </script>
+    </body>
+</html>
