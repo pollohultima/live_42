@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+.logo>img {
+    width: 200px;
+}
+
+.error {
+    color: red;
+}
+
+.item {
+    display: flex;
+    padding: .5rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+}
