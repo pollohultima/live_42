@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.purple {
+    background-color: blueviolet;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    margin: 2rem;
+}
+
+.red {
+    background-color: red;
+    position: relative;
+}
+
+.tiny {
+    width: 40px;
+    height: 40px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green2 {
+    background-color: green;
+    position: absolute;
+    top: 160px;
+    left: 300px;
+}
+
+.mid {
+    width: 80px;
+    height: 80px;
+}
+
+.right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.bot {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.green3 {
+    background-color: green;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

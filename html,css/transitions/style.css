@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: aquamarine;
+    transition: all 3s;
+}
+
+.square:hover {
+    background-color: blueviolet;
+}

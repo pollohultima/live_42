@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.site_header {
+    height: 10%;
+    background-color: lightblue;
+}
+
+.site_main {
+    height: 55%;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: lightcoral;
+    float: left;
+    height: 70%;
+}
+
+.content {
+    width: 65%;
+    background-color: lightgreen;
+    float: left;
+    height: 100%;
+}
+
+.site_footer {
+    height: 10%;
+    background-color: limegreen;
+}
+
+.sidebar, .content, .site_footer, .site_header {
+    margin: 2.5%;
+}
+
+.site_footer {
+    margin-top: 2.5%;
+}

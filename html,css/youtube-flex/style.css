@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body {
+    background-color: #181818;
+    min-width: 1440px;
+}
+
+/* Header style */
+
+.navbar {
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding: .5rem 1.5rem;
+    border-bottom: 2px solid #2a2a2a;
+    font-size: 1.5rem;
+}
+
+.logo {
+    flex-grow: 4;
+}
+
+.logo img {
+    max-height: 90px;
+    padding-left: 1rem;
+    filter: hue-rotate(183deg) invert(1) saturate(5);
+}
+
+.searchbar {
+    flex-grow: 4;
+    align-items: center;
+}
+
+#yts {
+    width: 80%;
+    line-height: 50px;
+    border: 1px solid #2a2a2a;
+    background-color: #181818;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.fa-search {
+    background-color: #2a2a2a;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 52px;
+    width: 50px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.fa-microphone {
+    background-color: #222222;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.utilities .fas {
+    padding-left: 1rem;
+}
+
+.utilities {
+    text-align: end;
+    flex-grow: 2;
+    min-width: 182px;
+}
+
+/* Main style */
+
+.container {
+    margin-top: 1.5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.item {
+    width: 570px;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.image_wrapper {
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h2 {
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.item p {
+    color: gray;
+}
+
+.image_wrapper>.fa-play-circle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    color: white;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 15px calc(50% - 8px);
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+.item:hover #hidden {
+    visibility: visible;
+}
+
+.big_play {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+    visibility: hidden;
+}
+
+.big_play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item:hover .big_play {
+    visibility: visible;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg);
+    margin: auto;
+    width: 60%;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.search {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input[type="search"] {
+    height: 20px;
+}
+
+.btn {
+    padding: 0 .5rem;
+}
+
+.unread {
+    color: white;
+    font-size: 2rem;
+}
+
+.special>span {
+    background-color: orange;
+    border-radius: 50%;
+    padding: 10px;
+}

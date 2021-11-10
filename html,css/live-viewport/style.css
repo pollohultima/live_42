@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site_header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar {
+    background-color: lightgray;
+    height: 80px;
+    width: 100vw;
+    text-align: center;
+}
+
+nav li {
+    line-height: 80px;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.site_main {
+    margin-top: 80px;
+}

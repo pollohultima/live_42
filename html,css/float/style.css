@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+}
+
+.container {
+    background-color: aquamarine;
+    border: 2px solid green;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blue {
+    background-color: blue;
+    float: left;
+}
+
+.pink {
+    background-color: pink;
+    float: right;
+}
