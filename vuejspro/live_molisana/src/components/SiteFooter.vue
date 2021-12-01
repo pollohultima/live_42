@@ -1,3 +1,4 @@
+
 <template>
   <footer id="site_footer">
     <div class="container">
@@ -29,13 +30,12 @@
 </template>
 
 <script>
-import Logo from "./Logo.vue";
+import Logo from './Logo.vue'
 export default {
-  components: { Logo },
-};
+  components: { Logo }
+}
 </script>
 <style lang="scss">
-//$molisana_primary_color
 @import "../assets/scss/variables.scss";
 
 #site_footer {
@@ -48,13 +48,18 @@ export default {
   h3 {
     color: $molisana_primary_color;
     margin-bottom: 0.3rem;
+    font-size: 16px;
   }
 
   ul {
     list-style: none;
-    a {
-      text-decoration: none;
-      color: #333;
+    li {
+      padding-top: 10px;
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 9px;
+      }
     }
   }
 }

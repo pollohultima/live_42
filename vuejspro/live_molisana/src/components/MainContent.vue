@@ -1,60 +1,108 @@
 <template>
   <main id="site_main">
     <section class="container">
-      <h2>Content Goes Here</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-        voluptatem distinctio, enim, quisquam quia blanditiis quod magni,
-        doloremque nobis inventore ex mollitia minus beatae autem. Libero
-        asperiores nobis quas. Iste ipsam ipsum exercitationem placeat enim
-        provident tempore totam, adipisci, debitis quaerat voluptas optio, alias
-        iusto eos dolor obcaecati sit! Dolorem minus molestias qui autem fugit
-        necessitatibus esse eaque ullam, sint laboriosam officiis possimus. Nemo
-        vel ad pariatur explicabo! Quas est ipsam molestiae dolor consequuntur
-        itaque ullam vero! Obcaecati, voluptate. Quia, quibusdam incidunt neque
-        voluptatibus sapiente autem dolorum! Aut consectetur distinctio
-        molestias veritatis nostrum accusantium deleniti dolorum ad quis rerum
-        et magni perferendis optio laudantium sequi, quam necessitatibus quas
-        aperiam aliquam! Consequatur aspernatur veritatis ratione! Nemo
-        asperiores, inventore aliquam veniam ipsam ea. Animi voluptate similique
-        possimus, sed laborum sequi vitae? Numquam ut saepe inventore sit
-        voluptatem! Cumque facilis eos voluptatem quo fuga iure, nesciunt porro,
-        cupiditate facere inventore libero, excepturi ratione iusto nulla
-        numquam tempora itaque nam. Voluptatibus obcaecati suscipit itaque
-        tempore, natus nobis maiores quas nisi delectus sapiente aliquam laborum
-        fugit voluptates nemo adipisci consectetur. Eligendi, nemo laboriosam
-        hic, enim, quo quisquam fuga dolorem facere voluptas adipisci debitis
-        doloremque quibusdam asperiores architecto quod saepe. Corporis non in
-        voluptates ad. Ipsum, aut veniam quisquam corrupti fugiat quibusdam?
-        Exercitationem, quis, iste animi suscipit quam, similique perferendis
-        omnis doloribus laboriosam expedita nemo accusamus aperiam! Ipsa,
-        consectetur cumque optio corporis repudiandae molestias voluptatem
-        ducimus saepe iure natus quis porro quae earum blanditiis quod
-        voluptatum, distinctio fuga voluptas quibusdam illo! Sunt debitis
-        quisquam ullam ea sequi neque hic cum ad cupiditate doloribus in a,
-        natus blanditiis rerum magni culpa ducimus aliquid maiores eum dolor
-        possimus unde, id quod! Quae maiores excepturi minima sequi perspiciatis
-        eius delectus aliquam dicta laboriosam amet, deserunt quam modi quo iure
-        maxime saepe autem ut cupiditate facere molestias. Possimus voluptate
-        exercitationem repellendus reprehenderit facilis aliquid hic quo nobis!
-        Aspernatur nostrum molestiae consequatur minima quaerat delectus
-        voluptatum. Porro nam quae animi perspiciatis adipisci, ipsa distinctio
-        ipsam voluptas odit odio praesentium recusandae fuga quisquam non
-        laborum excepturi corrupti cumque facilis hic obcaecati! Vitae, suscipit
-        veniam, reprehenderit consectetur enim officiis iste autem dolorum
-        maiores saepe facere ratione accusamus voluptates est similique
-        asperiores possimus nesciunt iure? Sit, rerum. Iure ea porro culpa vero
-        necessitatibus, natus suscipit delectus voluptatem dolores beatae? Qui
-        rem, sit natus maxime quos deserunt voluptatum laboriosam maiores modi
-        officia temporibus sapiente quaerat quisquam quam, excepturi nemo!
-        Perferendis quo assumenda esse nisi? Dolorem.
-      </p>
+      <h2>Lista Prodotti</h2>
+
+      <div class="products">
+        <Product
+          v-for="pasta in pastas"
+          :key="pasta.titolo"
+          :image="pasta.src"
+          :titolo="pasta.titolo"
+        />
+      </div>
     </section>
     <!-- /.container -->
   </main>
 </template>
 
 <script>
+import Product from "./Product.vue";
+
+export default {
+  components: {
+    Product,
+  },
+
+  data() {
+    return {
+      pastas: [
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/04/1-spaghetto-quadrato.jpg",
+          titolo: "N.4 Spaghetto Quadrato Bucato",
+          tipo: "lunga",
+          cottura: 6,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/04/5-fettuccine.jpg",
+          titolo: "N.5 Fettuccine",
+          tipo: "lunga",
+          cottura: 13,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/04/6-linguine.jpg",
+          titolo: "N.6 Linguine",
+          tipo: "lunga",
+          cottura: 12,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/04/7-mezze-linguine.jpg",
+          titolo: "N.7 Mezze Linguine",
+          tipo: "lunga",
+          cottura: 11,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/04/11-spaghettino-quadrato.jpg",
+          titolo: "n.11 Spaghettino Quadrato",
+          tipo: "lunga",
+          cottura: 9,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/38-mezze-maniche.jpg",
+          titolo: "N.38 Mezze maniche",
+          tipo: "corta",
+          cottura: 12,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/44-sedani.jpg",
+          titolo: "N.44 Sedani",
+          tipo: "corta",
+          cottura: 8,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/49-sedani.jpg",
+          titolo: "N.49 Sedanini",
+          tipo: "corta",
+          cottura: 8,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/53-lumachine.jpg",
+          titolo: "N.53 Lumachine",
+          tipo: "corta",
+          cottura: 12,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/55-chifferi-rigati.jpg",
+          titolo: "N.55 Chifferi rigati",
+          tipo: "corta",
+          cottura: 12,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/05/58-misto-corto.jpg",
+          titolo: "N.58 Misto corto",
+          tipo: "corta",
+          cottura: 9,
+        },
+        {
+          src: "https://www.lamolisana.it/wp-content/uploads/2021/06/84-ditale-quadrato.jpg",
+          titolo: "N.84 Ditale Quadrato",
+          tipo: "cortissima",
+          cottura: 12,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
